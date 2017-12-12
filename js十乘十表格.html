@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    
+	document.write("<table  border='1' width='300px' height='300px' cellspacing='0'>");
+    function ta (num){
+        for(i = 1 ; i <= num; i++){
+            document.write(`<tr>`);
+            for(j=1; j<=num; j++){
+                document.write(`<th>`)
+            }
+        }
+        document.write(`</table>`);
+    }
+    ta(12);
+
+    document.write("<table width='300px' height='300px' border='1' cellspacing='0'>")
+    function kuai (num){
+        for(var i= 1;i <= num;i++){
+            document.write(`<tr>`);
+            for(var k = 1;k <= num;k++){
+                document.write(`<th>`);
+            }
+        }
+        document.write(`</table>`);
+    }
+    kuai(10);
+   
+
+    /*var tab = "<table  border='1px' width='300px' height='300px' cellspacing='0'>";
+    for(var i=0; i<10; i++){
+        if(i % 2 ==0){
+            tab +='<tr bgColor="pink">';
+        }else{
+            tab +='<tr bgColor="yellow">';
+        }
+        for(var j=0; j<10; j++){
+            tab +='<td></td>';
+        }
+        tab += '</tr>';
+    }
+    tab +='</table>';
+    document.write(tab);*/
+
+    /*var tab = "<table  border='1px' width='300px' height='300px' cellspacing='0'>";
+    for(var i=0; i<10; i++){
+        tab += '</tr>';
+        for(var j=0; j<10; j++){
+            tab +='<td></td>';
+            if(i % 2 ==0 && j % 2 ==0){
+            tab +='<td> bgColor="pink"</td>';
+        }else if(i % 2 ==1 && j % 2 ==1){
+            tab +='<td> bgColor="yellow"</td>';
+        }else if(i % 2 ==0 && j % 2 ==1){
+            tab +='<td> bgColor="tan"</td>';
+        }else(i % 2 ==1 && j % 2 ==0){
+            tab +='<td> bgColor="green"</td>';
+        }
+        }
+       
+    }
+    tab +='</table>';
+    document.write(tab);*/
+</script>

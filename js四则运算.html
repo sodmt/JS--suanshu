@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>四则运算</title>
+</head>
+<body>
+	
+</body>
+</html>
+<script>
+	function suan (a,ope,b){
+		/*var num1 = Number(prompt('请输入数字'));
+			if(num1)
+		var ope = prompt('请输入运算符');
+		var num2 = Number(prompt('请输入数字'));*/
+		switch(ope){
+			case('+'):document.write(`a + b=${a+b}`);
+			break;
+			case('-'):document.write(`a - b=${a-b}`);
+			break;
+			case('*'):document.write(`a * b=${a*b}`);
+			break;
+			case('/'):document.write(`a / b=${a/b}`);
+			break;
+			case('%'):document.write(`a % b=${a%b}`);
+			break;
+			default:alert('输入有误');
+		}
+	}
+	suan(5,'+',2);
+</script>

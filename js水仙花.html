@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+</html>
+<script>
+	for(var i = 100; i <1000; i++){   
+		var a = i % 10;
+		var b = (i-a)/ 10 % 10;
+		var c = (i-b*10-a) / 100;
+		if(a*a*a+b*b*b+c*c*c == i){console.log(`这是水仙花的数${i}`)};
+	}
+	for(d = 1;d < 10;d++){
+		for(e=0;e<10;e++){
+			for(f=0;f<10;f++){
+				if((d**3+e**3+f**3) == (d*100+e*10+f)){console.log(`这是水仙花的数${d*100+e*10+f}`)}
+			}
+		}
+	}
+</script>
